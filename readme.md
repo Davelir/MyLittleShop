@@ -30,7 +30,6 @@ Projekt ten został przygotowany na potrzeby mojej pracy inżynierskiej
 - Lepsza edycja zamówień
 - Zakupy bez rejestracji
 - Integracja z systemami wysyłkowymi (DPD,Inpost itp)
-- Lepsza
 
 ## Zrzuty ekranu
 ##### Strona główna
