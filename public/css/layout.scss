@@ -1,0 +1,203 @@
+//Body
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 100;
+    background: radial-gradient(circle, rgb(220 220 220) 0%, rgb(239 237 237) 70%, rgba(255,255,255,1) 100%);
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.shadow{
+    box-shadow: 3px 2px 8px 0px #0000001c;
+}
+// Top menu
+.top_menu{
+    background: linear-gradient(10deg,#45cafc,#626fbf) !important;
+    a{
+        color: #fff !important;
+    }
+    .dropdown-menu{
+        a{
+            color: #333 !important;
+        }
+    }
+    .top_search{
+        background: #ffffff87;
+        border:none;
+        color:#444;
+        &:hover{
+            background: #ffffff95;
+        }
+    }
+    .menu_links{
+        @include media-breakpoint-down(md) {
+            a,div.dropdown{
+                display:block;
+                width:100%;
+                padding-bottom:20px;
+                i{
+                    width:32px;
+                }
+            }
+
+        }
+        a{
+            margin-left:20px;
+            padding: 5px;
+            i{
+                padding-right:5px;
+
+            }
+            &:hover{
+                text-decoration: none;
+                background: #fff;
+                color: #222 !important;
+                border-radius: 2px;
+
+            }
+        }
+    }
+}
+
+.menu_box{
+    >a{
+        padding:1em;
+        transition: all .2s;
+        cursor:pointer;
+        display:block;
+        width:100%;
+
+        border-left:10px solid transparent;
+        &:hover{
+            // background: rgba(0,0,0,0.1);
+            border-left: 10px solid $primary;
+            color: $primary;
+            text-decoration: none;
+        }
+    }
+}
+
+.product_box{
+    transition: all .2s;
+    cursor:pointer;
+    img{
+        transition: all .2s;
+    }
+    &:hover{
+        img{
+            transform: scale(0.9);
+        }
+    }
+    .bottom_content{
+        // bottom: 0px;
+        // position: absolute;
+        height:100%;
+        max-height:74px;
+
+    }
+    a{
+        color: #333 !important;
+
+        &:hover{
+            text-decoration: none;
+            color:#333 !important;
+        }
+    }
+}
+.product_row{
+    border:1px solid #ddd;
+    border-left:10px solid #ddd;
+    box-shadow:1px 1px 1px #77777750;
+    margin-bottom:10px;
+    transition: all .2s;
+    cursor:pointer;
+    &:hover{
+        box-shadow:1px 1px 1px #55555580;
+        border-left:10px solid #bbb;
+    }
+}
+
+.review{
+    border-left: 10px solid #ddd;
+}
+
+.box-title{
+    width: fit-content;
+    background: #5499db;
+    padding: 5px 40px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+
+    &:after{
+        content: "";
+        background: #5499db;
+        width: 70px;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        right: -30px;
+        transform: skewX(-40deg);
+        z-index: -1;
+    }
+}
+.cart{
+    .img-thumbnail{
+        max-height: 80px;
+    }
+}
+.cart-wrapper{
+    width: 350px;
+    min-height: 300px;
+    height:auto;
+    position: fixed;
+    /* top: 60px; */
+    // right: 300px;
+    z-index: 5;
+    padding-top: 70px;
+    display:none;
+    @include media-breakpoint-down(md) {
+        display:none !important;
+    }
+    .cart-box{
+        width:100%;
+        height:100%;
+        position: relative;
+        background: #fff;
+        filter: drop-shadow(0px 0px 2px #99A);
+        &::before{
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 160px;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #fff;
+            z-index: 6;
+        }
+    }
+}
+.img-min{
+    max-height: 80px;
+}
+.bg-1{
+    background-color: $bg1;
+}
+footer{
+    background: $bg1;
+    position: relative;
+    bottom: 0px;
+}
+main{
+    padding-top:2em;
+    flex:2;
+}
+.main {
+    background: $bg1;
+    padding:1em;
+}
