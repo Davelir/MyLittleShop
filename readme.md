@@ -6,7 +6,7 @@ Projekt ten został przygotowany na potrzeby mojej pracy inżynierskiej
 - Zmienić plik .env.example na .env
 - Połączenie z bazą ustawić w pliku .env
 - Ustawić odpowiednią nazwę oraz adres w pliku .env
-- Wykonać polecenie 
+- Wykonać polecenie ```php artisan migrate``` w katalogu głównym projektu
 ## MyLittleShop CMS
 
 
